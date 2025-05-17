@@ -1,0 +1,170 @@
+/*
+Theme Name: Custom WordPress Theme
+Theme URI: http://example.com/
+Author: Your Name
+Author URI: http://example.com/
+Description: A custom WordPress theme with a reading progress bar.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-theme, progress-bar
+Text Domain: custom-wordpress-theme
+*/
+
+/* Basic styling for the WordPress theme */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+article {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #666;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.footer-class {
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    article {
+        margin: 10px;
+    }
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #3498db;
+    z-index: 1000;
+}
+.footer p {
+    margin: 10px 0px;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-class {
+    padding: 0px 20px;
+}
+
+.pagination {
+    text-align: center;
+}
+.pagination a {
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
+}
+.pagination a:hover {
+    text-decoration: underline;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.author-avatar {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.comments-area {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.comments-area h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+.comment-list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.comment-body {
+    display: flex;
+    align-items: flex-start;
+}
+.comment-body img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.comment-content {
+    flex: 1;
+}
+.comment-meta {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+.comment-reply-link {
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+.comment-reply-link:hover {
+    text-decoration: underline;
+}
